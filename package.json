@@ -1,25 +1,20 @@
 {
-  "name": "react-native-skill",
+  "name": "react-native-skills",
   "version": "1.0.0",
-  "description": "The React Native Performance Skills registry provides a curated library of 11 architectural rules designed to enforce high-quality coding standards in React Native and Expo applications. It focuses on optimizing performance through best practices for list rendering, animations, state management, and scalable monorepo structures.",
+  "description": "AI skill to assist React Native developers",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "keywords": [
+    "react-native",
+    "ai",
+    "developer-tools",
+    "skills"
+  ],
+  "author": "Dev Doshi",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dev-Doshi170/react-native-skill.git"
   },
-  "keywords": [
-    "react-native",
-    "skill",
-    "claude",
-    "ai",
-    "agent",
-    "mobile"
-  ],
-  "author": "Dev-Doshi170",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Dev-Doshi170/react-native-skill/issues"
   },
