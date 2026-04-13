@@ -1,3 +1,8 @@
+---
+name: react-native-skills
+description: React Native best practices for AI agents. Use when building React Native or Expo apps, optimizing list performance, implementing animations with Reanimated, structuring monorepo projects, or managing application state.
+---
+
 # React Native & Expo Performance Skills
 
 Comprehensive best practices for React Native and Expo applications.
