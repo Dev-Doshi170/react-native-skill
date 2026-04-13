@@ -1,0 +1,13 @@
+{
+  "name": "react-native-performance-skills",
+  "version": "1.0.0",
+  "summary": "11 core rules for performant React Native and Expo apps",
+  "description": "Best practices for list rendering, animations, navigation, state management, and monorepo structure",
+  "author": "Zignuts Technohub",
+  "license": "MIT",
+  "repository": "https://github.com/yourusername/react-native-skills",
+  "keywords": ["react-native", "expo", "performance", "best-practices", "optimization"],
+  "rules_count": 11,
+  "categories": ["performance", "ui", "animation", "navigation", "state", "architecture"],
+  "platforms": ["ios", "android", "cross-platform"]
+}

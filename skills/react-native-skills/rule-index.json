@@ -1,0 +1,235 @@
+{
+    "version": 1,
+    "rules": {
+        "list-performance-item-memo": {
+            "title": "Memoize List Items",
+            "priority": "CRITICAL",
+            "category": "performance",
+            "triggers": [
+                "optimize flatlist",
+                "list item rerender",
+                "react native memo list",
+                "slow scrolling list",
+                "large list performance"
+            ],
+            "bad_patterns": [
+                "non memoized list items"
+            ],
+            "platforms": [
+                "ios",
+                "android",
+                "cross-platform"
+            ]
+        },
+        "list-performance-virtualize": {
+            "title": "Use Virtualization Properly",
+            "priority": "CRITICAL",
+            "category": "performance",
+            "triggers": [
+                "flatlist optimization",
+                "virtualizedlist performance",
+                "large dataset list",
+                "react native list lag",
+                "optimize scrolling"
+            ],
+            "bad_patterns": [
+                "rendering all items",
+                "no virtualization"
+            ],
+            "platforms": [
+                "ios",
+                "android",
+                "cross-platform"
+            ]
+        },
+        "react-state-minimize": {
+            "title": "Minimize State Usage",
+            "priority": "CRITICAL",
+            "category": "state",
+            "triggers": [
+                "too many states react",
+                "state management issue",
+                "unnecessary rerenders",
+                "optimize state usage",
+                "react native state problem"
+            ],
+            "bad_patterns": [
+                "excessive state",
+                "derived state misuse"
+            ],
+            "platforms": [
+                "ios",
+                "android",
+                "cross-platform"
+            ]
+        },
+        "list-performance-inline-objects": {
+            "title": "Avoid Inline Objects in Lists",
+            "priority": "HIGH",
+            "category": "performance",
+            "triggers": [
+                "flatlist performance",
+                "slow list",
+                "inline styles react native",
+                "re render list issue",
+                "why list is lagging"
+            ],
+            "bad_patterns": [
+                "inline styles",
+                "inline object props"
+            ],
+            "platforms": [
+                "ios",
+                "android",
+                "cross-platform"
+            ]
+        },
+        "list-performance-callbacks": {
+            "title": "Avoid Inline Functions in Lists",
+            "priority": "HIGH",
+            "category": "performance",
+            "triggers": [
+                "flatlist rerender",
+                "callback causing rerender",
+                "inline function renderitem",
+                "performance issue list",
+                "react native list optimization"
+            ],
+            "bad_patterns": [
+                "anonymous functions in render",
+                "inline callbacks"
+            ],
+            "platforms": [
+                "ios",
+                "android",
+                "cross-platform"
+            ]
+        },
+        "animation-derived-value": {
+            "title": "Use Derived Values for Animations",
+            "priority": "HIGH",
+            "category": "animation",
+            "triggers": [
+                "reanimated performance",
+                "derived value use",
+                "animation optimization",
+                "react native animation lag",
+                "shared values issue"
+            ],
+            "bad_patterns": [
+                "heavy calculations in animation",
+                "non optimized animations"
+            ],
+            "platforms": [
+                "ios",
+                "android",
+                "cross-platform"
+            ]
+        },
+        "navigation-native-navigators": {
+            "title": "Use Native Navigators Properly",
+            "priority": "HIGH",
+            "category": "navigation",
+            "triggers": [
+                "react navigation setup",
+                "native stack vs js stack",
+                "navigation performance",
+                "screen navigation issue",
+                "app navigation structure"
+            ],
+            "bad_patterns": [
+                "wrong navigator usage",
+                "mixing navigation patterns"
+            ],
+            "platforms": [
+                "ios",
+                "android",
+                "cross-platform"
+            ]
+        },
+        "state-ground-truth": {
+            "title": "Single Source of Truth",
+            "priority": "HIGH",
+            "category": "state",
+            "triggers": [
+                "state inconsistency",
+                "multiple sources of truth",
+                "data mismatch issue",
+                "react state sync problem",
+                "state duplication"
+            ],
+            "bad_patterns": [
+                "duplicated state",
+                "unsynced state"
+            ],
+            "platforms": [
+                "ios",
+                "android",
+                "cross-platform"
+            ]
+        },
+        "monorepo-single-dependency-versions": {
+            "title": "Keep Single Dependency Versions",
+            "priority": "HIGH",
+            "category": "architecture",
+            "triggers": [
+                "monorepo dependency issue",
+                "multiple versions package",
+                "react native build issue monorepo",
+                "dependency conflict",
+                "metro bundler issue"
+            ],
+            "bad_patterns": [
+                "multiple dependency versions",
+                "version mismatch"
+            ],
+            "platforms": [
+                "ios",
+                "android",
+                "cross-platform"
+            ]
+        },
+        "ui-pressable": {
+            "title": "Use Pressable for Interactions",
+            "priority": "MEDIUM",
+            "category": "ui",
+            "triggers": [
+                "button press react native",
+                "touchable vs pressable",
+                "handle press events",
+                "better touch handling",
+                "react native button"
+            ],
+            "bad_patterns": [
+                "deprecated touchables",
+                "improper press handling"
+            ],
+            "platforms": [
+                "ios",
+                "android",
+                "cross-platform"
+            ]
+        },
+        "ui-styling": {
+            "title": "Use Scalable Styling Patterns",
+            "priority": "MEDIUM",
+            "category": "ui",
+            "triggers": [
+                "react native styling best practice",
+                "style organization",
+                "design system styles",
+                "clean styling react native",
+                "scalable styles"
+            ],
+            "bad_patterns": [
+                "inline styling everywhere",
+                "unstructured styles"
+            ],
+            "platforms": [
+                "ios",
+                "android",
+                "cross-platform"
+            ]
+        }
+    }
+}

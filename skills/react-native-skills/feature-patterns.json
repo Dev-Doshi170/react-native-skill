@@ -1,0 +1,22 @@
+{
+  "architectural_patterns": {
+    "auth_flow": {
+      "screens": ["Landing", "Login", "Register", "Forgot Password", "OTP"],
+      "logic": "Conditional Stack Rendering based on authStatus",
+      "persistence": "Automatic re-hydration on boot"
+    },
+    "form_handling": {
+      "standard": "React Hook Form (RHF) + Zod for validation",
+      "best_practice": "Atomic inputs with uncontrolled behavior for performance"
+    },
+    "pagination": {
+      "strategy": "Infinite scroll with pre-fetching (onEndReachedThreshold: 0.5)",
+      "state": "Manage loadingMore and isRefreshing states independently"
+    },
+    "offline_support": {
+      "caching": "React Query PersistQueryClient with MMKV",
+      "data_persistence": "WatermelonDB or SQLite for complex relational data",
+      "syncing": "Conflict resolution via Last-Write-Wins or custom CRDT"
+    }
+  }
+}

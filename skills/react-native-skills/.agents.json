@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "intents": {
+    "performance": ["list-performance-item-memo", "list-performance-virtualize", "list-performance-inline-objects", "list-performance-callbacks", "animation-derived-value"],
+    "state": ["react-state-minimize", "state-ground-truth"],
+    "ui": ["ui-pressable", "ui-styling"],
+    "navigation": ["navigation-native-navigators"],
+    "architecture": ["monorepo-single-dependency-versions"]
+  },
+  "triggers": {
+    "list-performance-item-memo": ["flatlist slow", "list lag", "re-render issue", "optimize list"],
+    "list-performance-virtualize": ["large dataset", "virtualize", "1000 items"],
+    "react-state-minimize": ["too many states", "re-render problem", "state management"],
+    "ui-pressable": ["button press", "touchable", "press event"],
+    "animation-derived-value": ["animation lag", "reanimated", "animation performance"],
+    "navigation-native-navigators": ["navigation setup", "native stack"],
+    "state-ground-truth": ["state sync", "data mismatch"],
+    "monorepo-single-dependency-versions": ["monorepo", "dependency conflict"],
+    "ui-styling": ["styling pattern", "design system"],
+    "list-performance-inline-objects": ["inline styles", "style object"],
+    "list-performance-callbacks": ["inline function", "callback issue"]
+  },
+  "priorities": {
+    "CRITICAL": ["list-performance-item-memo", "list-performance-virtualize", "react-state-minimize"],
+    "HIGH": ["list-performance-inline-objects", "list-performance-callbacks", "animation-derived-value", "navigation-native-navigators", "state-ground-truth", "monorepo-single-dependency-versions"],
+    "MEDIUM": ["ui-pressable", "ui-styling"]
+  },
+  "retrieval_strategy": "match_intent_then_priority"
+}

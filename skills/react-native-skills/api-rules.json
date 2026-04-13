@@ -1,0 +1,23 @@
+{
+  "api_standard": {
+    "library": "Axios with custom instance",
+    "hook": "Prefer @tanstack/react-query for stateful data fetching",
+    "concurrency": "Implement request cancellation for screen unmounts"
+  },
+  "wrapper_config": {
+    "timeout": 10000,
+    "retry": {
+      "count": 3,
+      "backoff": "exponential",
+      "status_codes": [408, 500, 502, 503, 504]
+    }
+  },
+  "interceptors": {
+    "request": ["Attach JWT", "Attach Locale", "Attach App-Version"],
+    "response": ["Handle Global 401 Logout", "Handle Maintenance Mode", "Normalize Response Objects"]
+  },
+  "error_handling": {
+    "classification": ["SystemError", "NetworkError", "ApiError", "ValidationError"],
+    "recovery": "Show toast/alert for user-facing errors, log full trace for internal Sentry"
+  }
+}

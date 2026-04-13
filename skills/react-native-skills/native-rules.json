@@ -1,0 +1,18 @@
+{
+  "native_logic": {
+    "permissions": {
+      "handling": "Centralized PermissionManager hook",
+      "strategy": "Soft prompt first (explanation), Native prompt second",
+      "mandatory_check": ["CAMERA", "LOCATION", "NOTIFICATIONS"]
+    },
+    "deep_linking": {
+      "standard": "Universal Links (iOS) and App Links (Android)",
+      "routing": "Centralized linking configuration in React Navigation",
+      "deferred_deep_linking": "Support via Branch.io or custom session tracking"
+    },
+    "platform_conditional": {
+      "strategy": "Prefer Platform.select for small style/prop diffs",
+      "file_splitting": "Use .ios.tsx/.android.tsx for complex native implementations"
+    }
+  }
+}

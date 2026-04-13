@@ -1,0 +1,21 @@
+{
+  "testing_strategy": {
+    "unit_testing": {
+      "framework": "Jest",
+      "focus": "Utils, Hooks (useHook), Reducers/Actions",
+      "coverage": "Target 80% for business logic"
+    },
+    "component_testing": {
+      "library": "@testing-library/react-native (RNTL)",
+      "focus": "User interactions, Conditional rendering, Prop changes",
+      "mocking": "Mock all navigation and native modules"
+    },
+    "integration_testing": {
+      "tool": "Maestro or Detox",
+      "focus": "Critical paths (Auth, Checkout, Onboarding)"
+    },
+    "mock_data": {
+      "strategy": "Centralized factory/faker setup for consistent test data"
+    }
+  }
+}

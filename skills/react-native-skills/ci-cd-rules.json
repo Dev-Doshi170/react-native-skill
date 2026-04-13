@@ -1,0 +1,21 @@
+{
+  "delivery_pipeline": {
+    "build_system": {
+      "expo": "EAS Build / EAS Submit",
+      "cli": "Fastlane + GitHub Actions / Bitrise"
+    },
+    "environments": {
+      "types": ["development", "staging", "production"],
+      "config": "Use react-native-config or Expo Constants (Config Plugins)",
+      "secrets": "Managed via EAS Secret or CI Environment Variables"
+    },
+    "versioning": {
+      "strategy": "Semantic Versioning (SemVer)",
+      "automation": "Auto-increment build numbers on every CI run"
+    },
+    "ota_updates": {
+      "provider": "Expo Updates",
+      "strategy": "Critical fixes only, always with version fingerprinting"
+    }
+  }
+}

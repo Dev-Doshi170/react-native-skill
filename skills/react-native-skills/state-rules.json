@@ -1,0 +1,18 @@
+{
+  "state_patterns": {
+    "global_vs_local": {
+      "global": "Auth, User Profile, App Config, Cache (Zustand/React Query)",
+      "local": "Form values, Modal visibility, Component-specific toggles (useState)",
+      "lifting": "Only lift state when shared by distinct siblings, prefer Context for deep trees"
+    },
+    "zustand_best_practices": {
+      "selection": "Always use specific selectors (state => state.prop) to avoid unnecessary re-renders",
+      "atomic_actions": "Group multiple state changes into a single action",
+      "hydration": "Use persist middleware with MMKV for persistent global state"
+    }
+  },
+  "render_optimization": {
+    "prev_refs": "Use useRef for values that shouldn't trigger renders (timers, scroll tracking)",
+    "heavy_computations": "Always wrap in useMemo with proper dependency arrays"
+  }
+}

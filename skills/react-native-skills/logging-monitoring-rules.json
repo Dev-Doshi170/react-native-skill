@@ -1,0 +1,18 @@
+{
+  "observability": {
+    "logging": {
+      "strategy": "Centralized Logger service wrapper",
+      "levels": ["debug", "info", "warn", "error"],
+      "remote_sync": "Daily logs for debug builds, Error-only for production"
+    },
+    "error_tracking": {
+      "provider": "Sentry",
+      "mandatory_metadata": ["User ID", "App Version", "Device Model", "OS Version", "Breadcrumbs"],
+      "sourcemaps": "Mandatory upload on every build/CI run"
+    },
+    "performance_monitoring": {
+      "metrics": ["TTI (Time to Interaction)", "App Start Time", "Frame Drops per Screen"],
+      "automated_traces": "HTTP requests, Screen transitions, Long-running logic"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "ui_standards": {
+    "naming": "PascalCase for components, camelCase for props",
+    "atomic_design": ["atoms", "molecules", "organisms", "templates", "pages"],
+    "composition": "Prefer children composition over complex branching props"
+  },
+  "component_structure": {
+    "variants": ["primary", "secondary", "outline", "ghost", "danger"],
+    "sizes": ["xs", "sm", "md", "lg", "xl"],
+    "states": ["loading", "disabled", "active", "error", "success"]
+  },
+  "accessibility": {
+    "mandatory_roles": ["button", "link", "header", "image", "adjustable"],
+    "labels": "Every interactive component must have an accessibilityLabel",
+    "test_id": "Required for automated testing: {componentName}-{id}"
+  },
+  "performance": {
+    "memoization": "Wrap pure UI components in React.memo by default",
+    "inline_functions": "Strictly forbidden in renderItem or frequently updated components"
+  }
+}

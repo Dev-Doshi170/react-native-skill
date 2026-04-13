@@ -1,0 +1,27 @@
+{
+  "performance_guide": {
+    "metrics": {
+      "js_thread": "> 58 FPS on average",
+      "ui_thread": "> 59 FPS on average",
+      "startup": "< 2 seconds to interact"
+    },
+    "list_optimizations": {
+      "flatlist": {
+        "windowSize": 5,
+        "initialNumToRender": 10,
+        "maxToRenderPerBatch": 5,
+        "removeClippedSubviews": true,
+        "memoization": "Mandatory React.memo for renderItem"
+      }
+    },
+    "image_optimization": {
+      "format": "Use WebP/AVIF via Expo Image",
+      "caching": "Disk cache with immutable headers",
+      "sizing": "Request appropriate density (2x/3x) from CDN based on device"
+    },
+    "animation": {
+      "reanimated": "Strictly stick to GPU-animated properties (transform, opacity)",
+      "layout_animation": "Use sparingly for layout shifts, prefer shared transitions"
+    }
+  }
+}

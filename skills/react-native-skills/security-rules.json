@@ -1,0 +1,21 @@
+{
+  "security_standards": {
+    "storage": {
+      "standard": "MMKV with encryption key in Keychain/SecureStore",
+      "purgable": ["JWT Tokens", "Sensitive User Data", "Internal Cache"]
+    },
+    "token_handling": {
+      "storage_location": "Native Keychain only (never AsyncStorage)",
+      "validation": "Check JWT expiry before every API call to avoid unnecessary 401s",
+      "silent_refresh": "Implement automatic refresh with queueing for concurrent calls"
+    },
+    "network_security": {
+      "ssl_pinning": "Mandatory for high-value apps (react-native-ssl-pinning)",
+      "certificate_transparency": "Recommended for iOS"
+    },
+    "obfuscation": {
+      "proguard": "Enabled for Android builds",
+      "hermes": "Enabled for JS bytecode compilation"
+    }
+  }
+}

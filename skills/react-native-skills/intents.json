@@ -1,0 +1,67 @@
+{
+    "performance_issue": {
+        "category": "performance",
+        "examples": [
+            "app is slow",
+            "flatlist lag",
+            "scroll is not smooth",
+            "too many re renders",
+            "performance issue react native",
+            "list is lagging",
+            "animation is choppy"
+        ]
+    },
+    "ui_building": {
+        "category": "ui",
+        "examples": [
+            "create button",
+            "build component",
+            "design system setup",
+            "create reusable component",
+            "how to style react native",
+            "ui best practices"
+        ]
+    },
+    "animation_issue": {
+        "category": "animation",
+        "examples": [
+            "animation lag",
+            "reanimated not smooth",
+            "gesture animation issue",
+            "animation performance problem",
+            "shared value issue"
+        ]
+    },
+    "state_issue": {
+        "category": "state",
+        "examples": [
+            "too many states",
+            "state not updating",
+            "state management issue",
+            "data mismatch",
+            "state duplication",
+            "props drilling problem"
+        ]
+    },
+    "navigation_issue": {
+        "category": "navigation",
+        "examples": [
+            "navigation problem",
+            "screen not navigating",
+            "react navigation issue",
+            "stack vs native stack",
+            "navigation performance"
+        ]
+    },
+    "architecture_design": {
+        "category": "architecture",
+        "examples": [
+            "project structure",
+            "folder structure react native",
+            "scalable architecture",
+            "monorepo issue",
+            "dependency conflict",
+            "best architecture pattern"
+        ]
+    }
+}
